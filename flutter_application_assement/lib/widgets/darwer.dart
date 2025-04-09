@@ -41,7 +41,7 @@ class AppDrawer extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 40,
-                  backgroundColor:Color(0xFF1D5BBF),
+                  backgroundColor:const Color(0xFF1D5BBF),
                   child: ClipOval(
                     child: Image.asset(
                       AppAssets.profile,
@@ -54,7 +54,7 @@ class AppDrawer extends StatelessWidget {
                 const SizedBox(height: 8),
                 const Text(
                   'John Doe',
-                  style:  const TextStyle(
+                  style: TextStyle(
                       fontWeight: FontWeight.w600,
                       color: Colors.black,
                   ),

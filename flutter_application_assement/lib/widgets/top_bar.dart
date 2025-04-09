@@ -9,7 +9,7 @@ class DashboardTopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Color(0xFFFFFFFF),
+      backgroundColor: const Color(0xFFFFFFFF),
       title: Container(
         width: 30,
         padding: const EdgeInsets.all(2),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_assement/pages/home_screen.dart';
 import 'package:flutter_application_assement/providers/screen_state_provider.dart';
+// ignore: depend_on_referenced_packages
 import 'package:provider/provider.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class _MyAppState extends State<MyApp> {
         fontFamily: 'PlusJakartaSans',
       ),
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }

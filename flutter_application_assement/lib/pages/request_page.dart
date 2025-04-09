@@ -18,7 +18,7 @@ class _RequestScreenState extends State<RequestScreen> {
               SizedBox(height: 12),
               Text(
                 "Request Coming soon",
-                style: TextStyle(fontSize: 16, color: Colors.grey),
+                style: TextStyle(fontSize: 16, color: Colors.black),
               ),
             ],
           ),

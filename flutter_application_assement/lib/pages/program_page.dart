@@ -18,7 +18,7 @@ class _ProgramsScreenState extends State<ProgramScreen> {
               SizedBox(height: 12),
               Text(
                 "Programs Coming Soon",
-                style: TextStyle(fontSize: 16, color: Colors.grey),
+                style: TextStyle(fontSize: 16, color: Colors.black),
               ),
             ],
           ),

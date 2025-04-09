@@ -7,6 +7,7 @@ import 'package:flutter_application_assement/providers/screen_state_provider.dar
 import 'package:flutter_application_assement/widgets/bottem_bar.dart';
 import 'package:flutter_application_assement/widgets/darwer.dart';
 import 'package:flutter_application_assement/widgets/top_bar.dart';
+// ignore: depend_on_referenced_packages
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -33,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.white,
         endDrawer: const AppDrawer(),
         appBar: const PreferredSize(
-          preferredSize: Size.fromHeight(90),
+          preferredSize: Size.fromHeight(kToolbarHeight),
           child: DashboardTopBar(),
         ),
         body: screens[currentIndex],

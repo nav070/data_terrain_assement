@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_assement/providers/screen_state_provider.dart';
+// ignore: depend_on_referenced_packages
 import 'package:provider/provider.dart';
 
 class BottomNavBar extends StatelessWidget {
@@ -10,11 +11,12 @@ class BottomNavBar extends StatelessWidget {
     final currentIndex = context.watch<NavigationProvider>().currentIndex;
 
     return BottomNavigationBar(
+      backgroundColor: const Color(0xFFFFFFFF),
       currentIndex: currentIndex,
       onTap: (index) {
         context.read<NavigationProvider>().changeIndex(index);
       },
-      selectedItemColor: Colors.blue,
+      selectedItemColor: const Color(0xFF1D5BBF),
       unselectedItemColor: Colors.grey,
       type: BottomNavigationBarType.fixed,
       items: const [

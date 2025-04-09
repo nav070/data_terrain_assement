@@ -20,7 +20,7 @@ class PieChartWidget extends StatelessWidget {
                   sections: List.generate(
                     programs.length,
                     (index) => PieChartSectionData(
-                      color: programs[index]['color'] ?? Color(0xFFD9D9D9),
+                      color: programs[index]['color'] ?? const Color(0xFFD9D9D9),
                       value: programs[index]['count'].toDouble(),
                       title: '',
                       radius: 32,
@@ -37,7 +37,7 @@ class PieChartWidget extends StatelessWidget {
                 children: [
                  const Text(
                     'Total Programs',
-                    style:  const TextStyle(
+                    style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
@@ -77,7 +77,7 @@ class PieChartWidget extends StatelessWidget {
                     margin: const EdgeInsets.only(right: 6),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: item['color'] ?? Color(0xFFD9D9D9),
+                      color: item['color'] ?? const Color(0xFFD9D9D9),
                     ),
                   ),
                   Text(

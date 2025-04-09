@@ -81,8 +81,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   Widget _buildModeMetrics() {
     List<Map<String, dynamic>> programs = [
-      {'type': 'Virtual', 'count': 36, 'color': Color(0xFF1D5BBF)},
-      {'type': 'Physical', 'count': 50, 'color': Color(0xFFD4E6FF)},
+      {'type': 'Virtual', 'count': 36, 'color': const Color(0xFF1D5BBF)},
+      {'type': 'Physical', 'count': 50, 'color': const Color(0xFFD4E6FF)},
     ];
 
     return Container(
@@ -158,7 +158,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget _buildTypeMetrics() {
     List<Map<String, dynamic>> programs = [
       {'type': 'Premium', 'count': 40, 'color': const Color(0xFFFFBB00)},
-      {'type': 'Free', 'count': 54, 'color': Color(0xFF1D5BBF)},
+      {'type': 'Free', 'count': 54, 'color': const Color(0xFF1D5BBF)},
     ];
 
     return Container(
@@ -327,11 +327,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 ),
               ),
               const Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                padding:  EdgeInsets.symmetric(horizontal: 8.0),
                 child: Text(
                   'Top Programs',
                   overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
+                  style:  TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 16,
                     color: Colors.black,
@@ -545,7 +545,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         const SizedBox(width: 4),
                         _buildRowText(
                           text: data[index]['rating'].toString(),
-                          color: Color(0xFF1D5BBF),
+                          color: const Color(0xFF1D5BBF),
                           isMedium: true,
                         ),
                       ],
@@ -646,7 +646,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 child: Text(
                   'Program Status Metrics',
                   overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 16,
                     color: Colors.black,
@@ -970,13 +970,13 @@ class _TableTemplateWidgetState extends State<TableTemplateWidget> {
     return RawScrollbar(
       controller: _scrollController,
       thumbColor: Colors.black,
-      trackColor: Color(0xFFD9D9D9),
+      trackColor: const Color(0xFFD9D9D9),
       thumbVisibility: true,
       trackVisibility: true,
       thickness: 4,
       radius: const Radius.circular(4),
       trackRadius: Radius.zero,
-      trackBorderColor: Color(0xFFD9D9D9),
+      trackBorderColor: const Color(0xFFD9D9D9),
       child: Padding(
         padding: const EdgeInsets.only(bottom: 12),
         child: SingleChildScrollView(
@@ -991,7 +991,7 @@ class _TableTemplateWidgetState extends State<TableTemplateWidget> {
                 horizontalInside: BorderSide(color: Color(0xFFD9D9D9)),
               ),
               decoration: BoxDecoration(
-                border: Border.all(color: Color(0xFFD9D9D9)),
+                border: Border.all(color:const Color(0xFFD9D9D9)),
                 borderRadius: BorderRadius.circular(8),
               ),
               headingRowColor: const WidgetStatePropertyAll(Color(0xFFD9E4F2)),
