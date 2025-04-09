@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class DropDownWidget extends StatelessWidget {
   final String? text;
   final List<String> items;
@@ -17,9 +16,8 @@ class DropDownWidget extends StatelessWidget {
       width: 82,
       height: 32,
       child: DropdownButtonFormField<String>(
-        style:  const TextStyle(
-            color:  Color(0xFF1D5BBF),
-          
+        style: const TextStyle(
+          color: Color(0xFF1D5BBF),
         ),
         icon: const Icon(
           Icons.keyboard_arrow_down_rounded,
@@ -57,10 +55,9 @@ class DropDownWidget extends StatelessWidget {
                   child: Text(
                     item,
                     overflow: TextOverflow.ellipsis,
-                    style:  const TextStyle(
-                        color:  Color(0xFF1D5BBF),
-                      ),
-                    
+                    style: const TextStyle(
+                      color: Color(0xFF1D5BBF),
+                    ),
                   ),
                 ),
               ),

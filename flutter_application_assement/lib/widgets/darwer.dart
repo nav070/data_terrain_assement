@@ -30,9 +30,9 @@ class AppDrawer extends StatelessWidget {
           const Text(
             "Admin",
             style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-                color: Color(0xFF1D5BBF),
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              color: Color(0xFF1D5BBF),
             ),
           ),
           const SizedBox(height: 24),
@@ -41,7 +41,7 @@ class AppDrawer extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 40,
-                  backgroundColor:const Color(0xFF1D5BBF),
+                  backgroundColor: const Color(0xFF1D5BBF),
                   child: ClipOval(
                     child: Image.asset(
                       AppAssets.profile,
@@ -55,22 +55,22 @@ class AppDrawer extends StatelessWidget {
                 const Text(
                   'John Doe',
                   style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black,
                   ),
                 ),
                 const Text(
                   'Mentor',
                   style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w400,
+                    color: Colors.grey,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ],
             ),
           ),
-          const Divider(height: 32, thickness: 0.8, color:Color(0xFFD9D9D9)),
+          const Divider(height: 32, thickness: 0.8, color: Color(0xFFD9D9D9)),
           const SizedBox(height: 8),
           ...items.map(
             (item) => ListTile(
@@ -78,9 +78,8 @@ class AppDrawer extends StatelessWidget {
               title: Text(
                 item[0] as String,
                 style: const TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.w500,
-                  
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
               onTap: () => Navigator.pop(context),

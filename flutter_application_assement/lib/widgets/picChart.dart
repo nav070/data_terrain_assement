@@ -20,7 +20,8 @@ class PieChartWidget extends StatelessWidget {
                   sections: List.generate(
                     programs.length,
                     (index) => PieChartSectionData(
-                      color: programs[index]['color'] ?? const Color(0xFFD9D9D9),
+                      color:
+                          programs[index]['color'] ?? const Color(0xFFD9D9D9),
                       value: programs[index]['count'].toDouble(),
                       title: '',
                       radius: 32,
@@ -29,30 +30,26 @@ class PieChartWidget extends StatelessWidget {
                   sectionsSpace: 0,
                   centerSpaceColor: Colors.white,
                 ),
-                // duration: const Duration(milliseconds: 300),
-                // curve: Curves.easeInOut,
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                 const Text(
+                  const Text(
                     'Total Programs',
                     style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.black,
-                      
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black,
                     ),
                   ),
                   const SizedBox(height: 4),
                   Text(
                     '$total',
-                    style:  const TextStyle(
-                        fontSize: 26,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.black,
-                      ),
-                    
+                    style: const TextStyle(
+                      fontSize: 26,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.black,
+                    ),
                   ),
                 ],
               ),
@@ -83,21 +80,19 @@ class PieChartWidget extends StatelessWidget {
                   Text(
                     '${item['type']}',
                     style: const TextStyle(
-                        fontSize: 14,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    
+                      fontSize: 14,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                   const SizedBox(width: 6),
                   Text(
                     '(${item['count']})',
-                    style:  const TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.black,
-                      ),
-                    
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black,
+                    ),
                   ),
                 ],
               );

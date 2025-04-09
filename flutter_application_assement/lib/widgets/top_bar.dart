@@ -62,8 +62,7 @@ class DashboardTopBar extends StatelessWidget {
         margin: const EdgeInsets.only(right: 16),
         height: 24,
         width: 24,
-        child: SvgPicture.asset(AppAssets.menu)
-,
+        child: SvgPicture.asset(AppAssets.menu),
       ),
     );
   }
